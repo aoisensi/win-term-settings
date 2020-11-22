@@ -28,7 +28,10 @@
         "defaults":
         {
             // Put settings here that you want to apply to all profiles.
-
+            "fontFace": "HackGenNerd Console",
+            "fontSize": 12,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.8
         },
         "list":
         [
@@ -57,6 +60,14 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "name": "Helium (ConoHa)",
+                "commandline": "ssh.exe he"
+            },
+            {
+                "name": "Lithium",
+                "commandline": "ssh.exe li"
             }
         ]
     },
@@ -84,5 +95,6 @@
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
         //{ "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+        { "command": "commandPalette", "keys": "ctrl+shift+p" }
     ]
 }
